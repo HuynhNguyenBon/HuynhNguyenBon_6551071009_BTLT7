@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{862BBD0A-85A8-404E-2250-CAD82466686E}|SunriseHomestay\\SunriseHomestay.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\sunrisehomestay\\sunrisehomestay\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862BBD0A-85A8-404E-2250-CAD82466686E}|SunriseHomestay\\SunriseHomestay.csproj|solutionrelative:sunrisehomestay\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862BBD0A-85A8-404E-2250-CAD82466686E}|SunriseHomestay\\SunriseHomestay.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\sunrisehomestay\\sunrisehomestay\\models\\sunrisehomestay_efcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862BBD0A-85A8-404E-2250-CAD82466686E}|SunriseHomestay\\SunriseHomestay.csproj|solutionrelative:sunrisehomestay\\models\\sunrisehomestay_efcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862BBD0A-85A8-404E-2250-CAD82466686E}|SunriseHomestay\\SunriseHomestay.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\sunrisehomestay\\sunrisehomestay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862BBD0A-85A8-404E-2250-CAD82466686E}|SunriseHomestay\\SunriseHomestay.csproj|solutionrelative:sunrisehomestay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF44FC7F-08AC-4C49-8FA5-CCE168676014}|SunriseHomestay\\SunriseHomestay.csproj|E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\sunrisehomestay\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF44FC7F-08AC-4C49-8FA5-CCE168676014}|SunriseHomestay\\SunriseHomestay.csproj|solutionrelative:sunrisehomestay\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SunriseHomestay_EFContext.cs",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\SunriseHomestay\\Models\\SunriseHomestay_EFContext.cs",
+              "RelativeDocumentMoniker": "SunriseHomestay\\Models\\SunriseHomestay_EFContext.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\SunriseHomestay\\Models\\SunriseHomestay_EFContext.cs",
+              "RelativeToolTip": "SunriseHomestay\\Models\\SunriseHomestay_EFContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T14:22:39.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\SunriseHomestay\\Program.cs",
+              "RelativeDocumentMoniker": "SunriseHomestay\\Program.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\SunriseHomestay\\Program.cs",
+              "RelativeToolTip": "SunriseHomestay\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T14:14:39.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormPhong.cs",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\SunriseHomestay\\FormPhong.cs",
+              "RelativeDocumentMoniker": "SunriseHomestay\\FormPhong.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\SunriseHomestay\\FormPhong.cs",
+              "RelativeToolTip": "SunriseHomestay\\FormPhong.cs",
+              "ViewState": "AgIAAOgCAAAAAAAAAAAAAAQDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T14:09:38.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormPhong.cs [Design]",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\SunriseHomestay\\FormPhong.cs",
+              "RelativeDocumentMoniker": "SunriseHomestay\\FormPhong.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\SunriseHomestay\\SunriseHomestay\\FormPhong.cs [Design]",
+              "RelativeToolTip": "SunriseHomestay\\FormPhong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T14:03:35.072Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
