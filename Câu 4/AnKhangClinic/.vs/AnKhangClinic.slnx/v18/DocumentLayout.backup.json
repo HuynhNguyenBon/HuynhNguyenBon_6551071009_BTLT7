@@ -1,0 +1,159 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\ankhangclinic\\ankhangclinic\\frmlichkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|solutionrelative:ankhangclinic\\frmlichkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\ankhangclinic\\ankhangclinic\\models\\ankhangcliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|solutionrelative:ankhangclinic\\models\\ankhangcliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\ankhangclinic\\ankhangclinic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|solutionrelative:ankhangclinic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\ankhangclinic\\ankhangclinic\\ankhangclinic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|solutionrelative:ankhangclinic\\ankhangclinic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\ankhangclinic\\ankhangclinic\\frmlichkham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|solutionrelative:ankhangclinic\\frmlichkham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\ankhangclinic\\ankhangclinic\\frmlichkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|solutionrelative:ankhangclinic\\frmlichkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\ankhangclinic\\ankhangclinic\\models\\lichkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|solutionrelative:ankhangclinic\\models\\lichkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|e:\\baitapthayduong\\h\u1ECDc c#\\b\u00E0i t\u1EADp l\u00FD thuy\u1EBFt bu\u1ED5i 7\\ankhangclinic\\ankhangclinic\\models\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECA837B-A6AB-5230-BE54-E1E34A04BF6B}|AnKhangClinic\\AnKhangClinic.csproj|solutionrelative:ankhangclinic\\models\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AnKhangClinic",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\AnKhangClinic.csproj",
+              "RelativeDocumentMoniker": "AnKhangClinic\\AnKhangClinic.csproj",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\AnKhangClinic.csproj",
+              "RelativeToolTip": "AnKhangClinic\\AnKhangClinic.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-09T15:37:25.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmLichKham.cs",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\FrmLichKham.cs",
+              "RelativeDocumentMoniker": "AnKhangClinic\\FrmLichKham.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\FrmLichKham.cs",
+              "RelativeToolTip": "AnKhangClinic\\FrmLichKham.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T14:48:47.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\Program.cs",
+              "RelativeDocumentMoniker": "AnKhangClinic\\Program.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\Program.cs",
+              "RelativeToolTip": "AnKhangClinic\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T14:52:02.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnKhangClinicContext.cs",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\Models\\AnKhangClinicContext.cs",
+              "RelativeDocumentMoniker": "AnKhangClinic\\Models\\AnKhangClinicContext.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\Models\\AnKhangClinicContext.cs",
+              "RelativeToolTip": "AnKhangClinic\\Models\\AnKhangClinicContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA+wBkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T14:47:19.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmLichKham.Designer.cs",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\FrmLichKham.Designer.cs",
+              "RelativeDocumentMoniker": "AnKhangClinic\\FrmLichKham.Designer.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\FrmLichKham.Designer.cs",
+              "RelativeToolTip": "AnKhangClinic\\FrmLichKham.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T14:52:05.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmLichKham.cs [Design]",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\FrmLichKham.cs",
+              "RelativeDocumentMoniker": "AnKhangClinic\\FrmLichKham.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\FrmLichKham.cs [Design]",
+              "RelativeToolTip": "AnKhangClinic\\FrmLichKham.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T14:52:21.557Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LichKham.cs",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\Models\\LichKham.cs",
+              "RelativeDocumentMoniker": "AnKhangClinic\\Models\\LichKham.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\Models\\LichKham.cs",
+              "RelativeToolTip": "AnKhangClinic\\Models\\LichKham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T15:31:41.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BacSi.cs",
+              "DocumentMoniker": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\Models\\BacSi.cs",
+              "RelativeDocumentMoniker": "AnKhangClinic\\Models\\BacSi.cs",
+              "ToolTip": "E:\\Baitapthayduong\\H\u1ECDc C#\\B\u00C0I T\u1EACP L\u00DD THUY\u1EBET BU\u1ED4I 7\\AnKhangClinic\\AnKhangClinic\\Models\\BacSi.cs",
+              "RelativeToolTip": "AnKhangClinic\\Models\\BacSi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T15:28:25.155Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
