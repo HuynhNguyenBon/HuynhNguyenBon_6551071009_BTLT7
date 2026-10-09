@@ -1,0 +1,203 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using QuanLyTheLoaiSach.Models;
+
+namespace QuanLyTheLoaiSach
+{
+    public partial class FormTheLoaiSach : Form
+    {
+        private QuanLySach_EFContext context;
+        public FormTheLoaiSach()
+        {
+            InitializeComponent();
+
+            // Build options using a connection string. Prefer environment variable CONNECTION_STRING
+            // If not provided, fall back to a localdb development database. Update as needed.
+            var conn = GetConnectionString();
+            var options = new DbContextOptionsBuilder<QuanLySach_EFContext>()
+                .UseSqlServer(conn)
+                .Options;
+
+            context = new QuanLySach_EFContext(options);
+        }
+
+        private string GetConnectionString()
+        {
+            // First try environment variable
+            var env = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+            if (!string.IsNullOrWhiteSpace(env)) return env;
+
+            // Fallback development connection - change to your server/database if needed
+            return "Server=(localdb)\\MSSQLLocalDB;Database=QuanLySach;Trusted_Connection=True;TrustServerCertificate=True;";
+        }
+        // Sự kiện Load Form
+        private async void FormTheLoaiSach_Load(object sender, EventArgs e)
+        {
+            txtMaTL.ReadOnly = true; // Yêu cầu 2: TextBox Mã thể loại ReadOnly
+            await LoadDataAsync();
+        }
+
+        // Tải danh sách thể loại sách lên DataGridView
+        private async Task LoadDataAsync()
+        {
+            var list = await context.TheLoaiSaches.AsNoTracking().ToListAsync();
+            dgvTheLoai.DataSource = list;
+
+            // Đặt lại tiêu đề cột cho DataGridView (nếu cần)
+            if (dgvTheLoai.Columns["MaTL"] != null) dgvTheLoai.Columns["MaTL"].HeaderText = "Mã TL";
+            if (dgvTheLoai.Columns["TenTheLoai"] != null) dgvTheLoai.Columns["TenTheLoai"].HeaderText = "Tên thể loại";
+            if (dgvTheLoai.Columns["MoTa"] != null) dgvTheLoai.Columns["MoTa"].HeaderText = "Mô tả";
+            if (dgvTheLoai.Columns["SoLuongSach"] != null) dgvTheLoai.Columns["SoLuongSach"].HeaderText = "Số lượng sách";
+            if (dgvTheLoai.Columns["NgayTao"] != null) dgvTheLoai.Columns["NgayTao"].HeaderText = "Ngày tạo";
+        }
+
+        // Yêu cầu 3: Sự kiện SelectionChanged của DataGridView đổ dữ liệu lên các control
+        private void dgvTheLoai_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvTheLoai.CurrentRow != null && dgvTheLoai.CurrentRow.DataBoundItem is TheLoaiSach selectedItem)
+            {
+                txtMaTL.Text = selectedItem.MaTl.ToString();
+                txtTenTheLoai.Text = selectedItem.TenTheLoai;
+                txtMoTa.Text = selectedItem.MoTa;
+                if (lblNgayTao != null) lblNgayTao.Text = selectedItem.NgayTao.ToString("yyyy/MM/dd HH:mm:ss");
+            }
+        }
+
+        // Yêu cầu 4 & 7: Chức năng Thêm mới + Validate
+        private async void btnThem_Click(object sender, EventArgs e)
+        {
+            // Validate: Không được bỏ trống Tên thể loại
+            if (string.IsNullOrWhiteSpace(txtTenTheLoai.Text))
+            {
+                MessageBox.Show("Vui lòng nhập Tên thể loại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtTenTheLoai.Focus();
+                return;
+            }
+
+            string tenTL = txtTenTheLoai.Text.Trim();
+
+            // Validate: Không cho phép trùng tên thể loại khi Thêm mới
+            bool exists = await context.TheLoaiSaches.AnyAsync(x => x.TenTheLoai.ToLower() == tenTL.ToLower());
+            if (exists)
+            {
+                MessageBox.Show("Tên thể loại này đã tồn tại trong hệ thống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var newItem = new TheLoaiSach
+            {
+                TenTheLoai = tenTL,
+                MoTa = txtMoTa.Text.Trim(),
+                SoLuongSach = 0,
+                NgayTao = DateTime.Now
+            };
+
+            context.TheLoaiSaches.Add(newItem);
+            await context.SaveChangesAsync();
+
+            MessageBox.Show("Thêm mới thể loại sách thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            btnLamMoi_Click(sender, e);
+            await LoadDataAsync();
+        }
+
+        // Yêu cầu 4: Chức năng Cập nhật (Sửa)
+        private async void btnSua_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtMaTL.Text, out int maTL))
+            {
+                MessageBox.Show("Vui lòng chọn dòng thể loại cần sửa từ danh sách!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtTenTheLoai.Text))
+            {
+                MessageBox.Show("Tên thể loại không được để trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string tenTL = txtTenTheLoai.Text.Trim();
+
+            // Kiểm tra trùng tên với thể loại khác
+            bool exists = await context.TheLoaiSaches.AnyAsync(x => x.TenTheLoai.ToLower() == tenTL.ToLower() && x.MaTl != maTL);
+            if (exists)
+            {
+                MessageBox.Show("Tên thể loại này đã được sử dụng bởi mã thể loại khác!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var item = await context.TheLoaiSaches.FindAsync(maTL);
+            if (item != null)
+            {
+                item.TenTheLoai = tenTL;
+                item.MoTa = txtMoTa.Text.Trim();
+
+                await context.SaveChangesAsync();
+                MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                await LoadDataAsync();
+            }
+        }
+
+        // Yêu cầu 5: Chức năng Xóa (Xác nhận + bắt lỗi DbUpdateException)
+        private async void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtMaTL.Text, out int maTL))
+            {
+                MessageBox.Show("Vui lòng chọn thể loại cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var confirm = MessageBox.Show($"Bạn có chắc chắn muốn xóa thể loại '{txtTenTheLoai.Text}'?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.Yes)
+            {
+                try
+                {
+                    var item = await context.TheLoaiSaches.FindAsync(maTL);
+                    if (item != null)
+                    {
+                        context.TheLoaiSaches.Remove(item);
+                        await context.SaveChangesAsync();
+
+                        MessageBox.Show("Xóa thể loại thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        btnLamMoi_Click(sender, e);
+                        await LoadDataAsync();
+                    }
+                }
+                catch (DbUpdateException)
+                {
+                    // Bắt lỗi khi thể loại đang được các bảng khác (Sách) tham chiếu khóa ngoại
+                    MessageBox.Show("Không thể xóa thể loại này vì đang chứa dữ liệu sách tham chiếu!", "Lỗi ràng buộc dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        // Yêu cầu 6: Tìm kiếm theo Tên thể loại (LINQ Where + Contains)
+        private async void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string keyword = txtTimKiem.Text.Trim().ToLower();
+
+            var searchResult = await context.TheLoaiSaches
+                .Where(x => x.TenTheLoai.ToLower().Contains(keyword))
+                .AsNoTracking()
+                .ToListAsync();
+
+            dgvTheLoai.DataSource = searchResult;
+        }
+
+        // Chức năng Làm mới các Control nhập liệu
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtMaTL.Clear();
+            txtTenTheLoai.Clear();
+            txtMoTa.Clear();
+            if (lblNgayTao != null) lblNgayTao.Text = "...";
+            txtTimKiem.Clear();
+            txtTenTheLoai.Focus();
+        }
+
+    }
+}
